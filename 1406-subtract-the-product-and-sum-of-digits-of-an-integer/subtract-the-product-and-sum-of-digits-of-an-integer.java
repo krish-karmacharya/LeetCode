@@ -2,11 +2,14 @@ class Solution {
     public int subtractProductAndSum(int n) {
         int product = 1;
         int sum = 0;
-        while (n != 0) {
-            product *= n % 10;
-            sum += n % 10;
-            n /= 10;
+
+        while (n > 0) {
+            int digit = n % 10; // Extract the last digit
+            product *= digit;
+            sum += digit;
+            n /= 10; // Remove the last digit
         }
+
         return product - sum;
     }
 }
