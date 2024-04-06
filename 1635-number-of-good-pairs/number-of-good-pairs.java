@@ -11,6 +11,7 @@
 //         return count;
 //     }
 // }
+// SOULTION 
 class Solution {
     public int numIdenticalPairs(int[] nums) {
        int []arr = new int[101];
