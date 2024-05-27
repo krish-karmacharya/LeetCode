@@ -9,7 +9,6 @@ class Solution {
             sum += digit;
             n /= 10; // Remove the last digit
         }
-
         return product - sum;
     }
 }
